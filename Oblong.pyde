@@ -4,24 +4,26 @@
 # 6/30/19
 ###########################
 
-line_count = 25
-line_width = 800
-line_sep = 30
+line_count = 100
+line_width = 1500
+line_sep = 20
 
-circle_count = 100
-circle_size = 10
-circle_chance = .7
+
+circle_count = 200
+circle_size = 15
+circle_chance = .5
 
 line_weight = 1
 
 w = line_width+(line_width/4)
 h = (line_count-1)*line_sep + (line_width/4)
 
-ran_mov = 2
+ran_mov = 4
 
 # Color Palettes
 colors = [(127, 199, 175), (218, 216, 167), (167, 219, 216), (237, 118, 112)]
-
+#colors = [(92,97,130), (79,164,165), (202,166,122), (212,117,100)]
+#colors = [(139,169,135), (244,107,99), (100,161,165)]
 def setup():
     # Set up the image
     size(w, h)
@@ -32,8 +34,11 @@ def setup():
     pixelDensity(2)
     
     # Color in the background (May add the background to palette)
-    background(208, 200, 176)
-    stroke(0)
+    #background(208, 200, 176)
+    background(74,98,102)
+    
+    #background(255, 255, 255)
+    stroke(255)
     
     # Start the drawing based on line width 
     x_start = line_width/8
@@ -66,13 +71,14 @@ def setup():
             noFill()
             
         # Draw the curvy line
+        stroke(255)
         endShape()
         
     # Generate a 'seed' just to distinguish image files
     seed = int(random(600))
     
     # Save the image with line count and 'seed'
-    save("Examples/Oblong-" + str(line_count) + "-" + str(seed) + ".png")
+    save("Examples/Website/Oblong-" + str(line_count) + "-" + str(seed) + ".png")
     
     # Only need to draw once
     noLoop()
