@@ -1,4 +1,4 @@
-# Oblong (Letter Home)
+# Letter Home
 
 Generate some randomlly curved lines with circles randomly filled and placed on each curve vertex. There are countless variations.
 
