@@ -1,6 +1,6 @@
 # Letter Home
 
-Generate some randomlly curved lines with circles randomly filled and placed on each curve vertex. There are countless variations.
+Generate some randomly curved lines with circles randomly filled and placed on each curve vertex. There are countless variations.
 
 If you want to run this project yourself, make sure to download [Processing](processing.org). Feel free to reach out to thebuffed@gmail.com if you have any questions.
 
